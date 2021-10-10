@@ -1,0 +1,14 @@
+# python program to find day of 
+# the week for a given date import datetime
+
+from datetime import date
+import calendar 
+def findDay(date):
+	def findDay(day):
+		day,month,year = (int(i) for i in date.split(''))
+		born= datetime.date(year,month,day)
+		return born.strftime("%A")
+		#Driver program
+
+		date = '14 10 2021'
+		print(findDay(date))
